@@ -328,7 +328,8 @@ void MapDisplay::createSwatches()
   size_t swatch_width = width;
   size_t swatch_height = height;
   int number_swatches = 1;
-  int maximum_number_swatch_splittings = 4;  // 4 seems to work well for this purpose.
+  int maximum_number_swatch_splittings = 256;  // 4 seems to work well for this purpose.
+  //   int maximum_number_swatch_splittings = 4;  // 4 seems to work well for this purpose.
 
   for (int i = 0; i < maximum_number_swatch_splittings; i++) {
     RVIZ_COMMON_LOG_INFO_STREAM("Creating " << number_swatches << " swatches_");
